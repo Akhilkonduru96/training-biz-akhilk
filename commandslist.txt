@@ -1,0 +1,405 @@
+    1  2024-09-17 09:40:43 export HISTTIMEFORMAT="%F %T "
+    2  2024-09-17 09:40:52 source ~/.bashrc
+    3  2024-09-17 09:41:04 history > commandslist.txt
+    4  2024-09-17 09:49:19 chmod 700 ~/.ssh
+    5  2024-09-17 09:50:01 chmod 600 ~/.ssh/"C:\Users\akhil.konduru\Downloads\akhilk-keypair.pem"
+    6  2024-09-17 09:52:17 ls
+    7  2024-09-17 09:52:28 cls
+    8  2024-09-17 09:56:12 ls .ssh
+    9  2024-09-17 09:56:24 mkdir -p .ssh
+   10  2024-09-17 09:57:04 ssh-copy-id ec2-user@13.60.9.200
+ssh ec2-user@13.48.5.104
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/authorized_keys
+chmod 700 ~/.ssh
+cd .ssh
+ls
+cd authorized_keys
+nano authorized_keys
+vi authorized_keys
+cd .ssh
+vi authorized_keys
+cd ..
+sudo -i
+sudo su akhil
+sudo -i
+sudo yum update
+sudo yum install wget
+wget https://www.oracle.com/in/database/technologies/xe-downloads.html
+wget  wget https://download.oracle.com/otn-pub/otn_software/db-express/oracle-database-xe-21c-1.0-1.ol8.x86_64.rpm
+ls -al
+sudo yum localinstall oracle-database-xe-21c-1.0-1.ol8.x86_64.rpm
+wget https://yum.oracle.com/repo/OracleLinux/OL8/appstream/x86_64/getPackage/oracle-database-preinstall-21c-1.0-1.el8.x86_64.rpm
+ls -al
+sudo yum localinstall oracle-database-preinstall-21c-1.0-1.el8.x86_64.rpm
+wget https://rpmfind.net/linux/almalinux/8.10/AppStream/x86_64/os/Packages/compat-openssl10-1.0.2o-4.el8_6.x86_64.rpm
+ls -al
+sudo yum localinstall compat-openssl10-1.0.2o-4.el8_6.x86_64.rpm 
+sudo yum localinstall oracle-database-preinstall-21c-1.0-1.el8.x86_64.rpm
+sudo yum localinstall oracle-database-xe-21c-1.0-1.ol8.x86_64.rpm
+sudo yum install java-1.8.0-openjdk
+cat /etc/redhat-release
+free -g
+free -m
+top
+java -version
+sudo yum install java-21-openjdk -y
+java -version
+sudo yum update
+java -version
+winget upgrade --id BellSoft.LibericaJDK21
+wget upgrade --id BellSoft.LibericaJDK21
+wget upgrade BellSoft.LibericaJDK21
+sdk upgrade java
+sudo update-alternatives --config 'java'
+java -version
+sudo /etc/init.d/oracle-xe-21c configure
+# export CV_ASSUME_DISTID=OEL8.4
+export CV_ASSUME_DISTID=OEL8.4
+sudo /etc/init.d/oracle-xe-21c configure
+vi/opt/oracle/product/21c/dbhomeXE/cv/admin/cv_config
+vi opt/oracle/product/21c/dbhomeXE/cv/admin/cv_config
+cd /opt
+cd /oracle
+ls
+cd oracle
+ls
+cd product
+ls
+cd 21c
+ls
+cd dbhomeXE/
+cd cv
+cd admin
+cd cvu_config
+ls
+vi cvu_config
+chmod 777 cvu_config
+sudo chmod 777 cvu_config
+vi cvu_config
+cd ..
+cd..
+sudo /etc/init.d/oracle-xe-21c configure
+sudo yum install screen
+sudo yum install tmux
+sudo /etc/init.d/oracle-xe-21c configure
+sudo yum install tmux
+env | grep ORACLE
+export ORACLE_HOME=/opt/oracle/product/21c/dbhomeXE
+export ORACLE_SID=XE
+export PATH=$PATH:/opt/oracle/product/21c/dbhomeXE/bin
+sqlplus
+lsnrctl status
+su - oracle
+sudo service oracle-xe-21c status
+sudo service oracle-xe-21c start
+sqlplus
+sudo bash
+sqlplus
+history
+sudo service oracle-xe-21c start
+sudo service oracle-xe-21c status
+netstat ltnp
+netstat -ltnp
+sudo service oracle-xe-21c start
+sudo service oracle-xe-21c stop
+sudo service oracle-xe-21c start
+netstat -ltnp
+ls
+/opt/oracle/product/21c/dbhomeXE/bin
+cd /opt/oracle/product/21c/dbhomeXE/bin
+imp classicmodels/classicmodels FILE=/home/ec2-user/classicmodels.dmp log=/home/ec2-user/import.log FULL=Y
+cd /home/ec2-user/
+cd .ssh
+ls
+vi authorized_keys 
+lsnrctl status
+sudo bash
+   11  2024-09-25 12:15:45 sudo yum github
+   12  2024-09-25 12:16:47 sudo yum git
+   13  2024-09-25 12:16:51 sudo yum gitbash
+   14  2024-09-25 12:17:36 git --version
+   15  2024-09-25 12:18:16 sudo yum install gitbash
+   16  2024-09-25 12:19:41 sudo yum install git
+   17  2024-09-25 12:20:18 git clone https://github.com/Akhilkonduru96/training-biz-akhilk.git
+   18  2024-09-25 12:20:24 ll
+   19  2024-09-25 12:20:46 cd training-biz-akhilk
+   20  2024-09-25 12:20:50 ls
+   21  2024-09-25 12:21:01 ls -al
+   22  2024-09-25 12:24:41 cd .git
+   23  2024-09-25 12:24:44 ls
+   24  2024-09-25 12:24:56 cd branches
+   25  2024-09-25 12:24:59 ls
+   26  2024-09-25 12:25:04 ls -al
+   27  2024-09-25 12:25:30 cd ..
+   28  2024-09-25 12:25:39 vi config
+   29  2024-09-25 12:33:02 cd logs
+   30  2024-09-25 12:33:04 ls
+   31  2024-09-25 12:33:11 vi HEAD
+   32  2024-09-25 12:37:59 cd ..
+   33  2024-09-25 12:38:29 ls
+   34  2024-09-25 12:38:34 cd ..
+   35  2024-09-25 12:38:41 export HISTTIMEFORMAT="%F %T "
+   36  2024-09-25 12:38:41 source ~/.bashrc
+   37  2024-09-25 12:38:41 history > commandslist.txt
+   38  2024-09-25 12:38:49 cd home
+   39  2024-09-25 12:40:00 ls
+   40  2024-09-25 12:40:08 cdc ec2-user
+   41  2024-09-25 12:40:13 cd ec2-user
+   42  2024-09-25 12:40:19 export HISTTIMEFORMAT="%F %T "
+   43  2024-09-25 12:40:19 source ~/.bashrc
+   44  2024-09-25 12:40:19 history > commandslist.txt
+   45  2024-09-25 12:40:39 ls
+   46  2024-09-25 12:40:50 cd commandlist.txt
+   47  2024-09-25 12:41:00 vi commandlist.txt
+   48  2024-09-25 12:41:22 cd commandslist.txt
+   49  2024-09-25 12:41:33 vi commandslist.txt
+   50  2024-09-25 12:44:58 exit
+sqlplus
+aws ec2 describe-instances --instance-ids i-0792a9ddd272c68e9 --query "Reservations[*].Instances[*].PublicIpAddress" --output text
+sudo yum update -y
+sudo yum install https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/linux_amd64/amazon-ssm-agent.rpm -y
+sudo systemctl enable amazon-ssm-agent
+sudo systemctl start amazon-ssm-agent
+sudo systemctl status amazon-ssm-agent
+sudo cat /var/log/amazon/ssm/amazon-ssm-agent.log
+sudo systemctl status amazon-ssm-agent
+sudo systemctl restart amazon-ssm-agent
+sudo systemctl status amazon-ssm-agent
+sudo cat /var/log/amazon/ssm/amazon-ssm-agent.log
+ls
+cat commandlists.txt >> training-biz-akhilk/commandslists.txt
+touch commandlists.txt >> training-biz-akhilk/commandslists.txt
+cd training-biz-akhilk
+ls
+vi commandslists.txt
+cd ..
+vi commandslist.txt
+cat commandlists.txt >> training-biz-akhilk/commandslists.txt
+vi training-biz-akhilk/commandslists.txt 
+cat commandlists.txt > training-biz-akhilk/commandslists.txt
+vi training-biz-akhilk/commandslists.txt 
+ls -l commandslist.txt
+cat commandslist.txt > training-biz-akhilk/commandslists.txt
+vi training-biz-akhilk/commandslists.txt
+sqlplus
+git --version
+s
+ls -al
+cd training-biz-akhilk/
+chrontab -l
+chrontab -e
+crontab -e
+ls
+cd .
+cd ..
+vi git_commit.sh
+   51  2024-09-27 06:27:57 # Load history from the history file manually
+   52  2024-09-27 06:27:57 history -a
+   53  2024-09-27 06:27:57 history_file=~/.bash_history
+   54  2024-09-27 06:27:57 if [ -f $history_file ]; then     history -r $history_file  # Read the history file into the current session
+fi
+   55  2024-09-17 09:40:43 export HISTTIMEFORMAT="%F %T "
+   56  2024-09-17 09:40:52 source ~/.bashrc
+   57  2024-09-17 09:41:04 history > commandslist.txt
+   58  2024-09-17 09:49:19 chmod 700 ~/.ssh
+   59  2024-09-17 09:50:01 chmod 600 ~/.ssh/"C:\Users\akhil.konduru\Downloads\akhilk-keypair.pem"
+   60  2024-09-17 09:52:17 ls
+   61  2024-09-17 09:52:28 cls
+   62  2024-09-17 09:56:12 ls .ssh
+   63  2024-09-17 09:56:24 mkdir -p .ssh
+   64  2024-09-17 09:57:04 ssh-copy-id ec2-user@13.60.9.200
+ssh ec2-user@13.48.5.104
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/authorized_keys
+chmod 700 ~/.ssh
+cd .ssh
+ls
+cd authorized_keys
+nano authorized_keys
+vi authorized_keys
+cd .ssh
+vi authorized_keys
+cd ..
+sudo -i
+sudo su akhil
+sudo -i
+sudo yum update
+sudo yum install wget
+wget https://www.oracle.com/in/database/technologies/xe-downloads.html
+wget  wget https://download.oracle.com/otn-pub/otn_software/db-express/oracle-database-xe-21c-1.0-1.ol8.x86_64.rpm
+ls -al
+sudo yum localinstall oracle-database-xe-21c-1.0-1.ol8.x86_64.rpm
+wget https://yum.oracle.com/repo/OracleLinux/OL8/appstream/x86_64/getPackage/oracle-database-preinstall-21c-1.0-1.el8.x86_64.rpm
+ls -al
+sudo yum localinstall oracle-database-preinstall-21c-1.0-1.el8.x86_64.rpm
+wget https://rpmfind.net/linux/almalinux/8.10/AppStream/x86_64/os/Packages/compat-openssl10-1.0.2o-4.el8_6.x86_64.rpm
+ls -al
+sudo yum localinstall compat-openssl10-1.0.2o-4.el8_6.x86_64.rpm 
+sudo yum localinstall oracle-database-preinstall-21c-1.0-1.el8.x86_64.rpm
+sudo yum localinstall oracle-database-xe-21c-1.0-1.ol8.x86_64.rpm
+sudo yum install java-1.8.0-openjdk
+cat /etc/redhat-release
+free -g
+free -m
+top
+java -version
+sudo yum install java-21-openjdk -y
+java -version
+sudo yum update
+java -version
+winget upgrade --id BellSoft.LibericaJDK21
+wget upgrade --id BellSoft.LibericaJDK21
+wget upgrade BellSoft.LibericaJDK21
+sdk upgrade java
+sudo update-alternatives --config 'java'
+java -version
+sudo /etc/init.d/oracle-xe-21c configure
+# export CV_ASSUME_DISTID=OEL8.4
+export CV_ASSUME_DISTID=OEL8.4
+sudo /etc/init.d/oracle-xe-21c configure
+vi/opt/oracle/product/21c/dbhomeXE/cv/admin/cv_config
+vi opt/oracle/product/21c/dbhomeXE/cv/admin/cv_config
+cd /opt
+cd /oracle
+ls
+cd oracle
+ls
+cd product
+ls
+cd 21c
+ls
+cd dbhomeXE/
+cd cv
+cd admin
+cd cvu_config
+ls
+vi cvu_config
+chmod 777 cvu_config
+sudo chmod 777 cvu_config
+vi cvu_config
+cd ..
+cd..
+sudo /etc/init.d/oracle-xe-21c configure
+sudo yum install screen
+sudo yum install tmux
+sudo /etc/init.d/oracle-xe-21c configure
+sudo yum install tmux
+env | grep ORACLE
+export ORACLE_HOME=/opt/oracle/product/21c/dbhomeXE
+export ORACLE_SID=XE
+export PATH=$PATH:/opt/oracle/product/21c/dbhomeXE/bin
+sqlplus
+lsnrctl status
+su - oracle
+sudo service oracle-xe-21c status
+sudo service oracle-xe-21c start
+sqlplus
+sudo bash
+sqlplus
+history
+sudo service oracle-xe-21c start
+sudo service oracle-xe-21c status
+netstat ltnp
+netstat -ltnp
+sudo service oracle-xe-21c start
+sudo service oracle-xe-21c stop
+sudo service oracle-xe-21c start
+netstat -ltnp
+ls
+/opt/oracle/product/21c/dbhomeXE/bin
+cd /opt/oracle/product/21c/dbhomeXE/bin
+imp classicmodels/classicmodels FILE=/home/ec2-user/classicmodels.dmp log=/home/ec2-user/import.log FULL=Y
+cd /home/ec2-user/
+cd .ssh
+ls
+vi authorized_keys 
+lsnrctl status
+sudo bash
+   65  2024-09-25 12:15:45 sudo yum github
+   66  2024-09-25 12:16:47 sudo yum git
+   67  2024-09-25 12:16:51 sudo yum gitbash
+   68  2024-09-25 12:17:36 git --version
+   69  2024-09-25 12:18:16 sudo yum install gitbash
+   70  2024-09-25 12:19:41 sudo yum install git
+   71  2024-09-25 12:20:18 git clone https://github.com/Akhilkonduru96/training-biz-akhilk.git
+   72  2024-09-25 12:20:24 ll
+   73  2024-09-25 12:20:46 cd training-biz-akhilk
+   74  2024-09-25 12:20:50 ls
+   75  2024-09-25 12:21:01 ls -al
+   76  2024-09-25 12:24:41 cd .git
+   77  2024-09-25 12:24:44 ls
+   78  2024-09-25 12:24:56 cd branches
+   79  2024-09-25 12:24:59 ls
+   80  2024-09-25 12:25:04 ls -al
+   81  2024-09-25 12:25:30 cd ..
+   82  2024-09-25 12:25:39 vi config
+   83  2024-09-25 12:33:02 cd logs
+   84  2024-09-25 12:33:04 ls
+   85  2024-09-25 12:33:11 vi HEAD
+   86  2024-09-25 12:37:59 cd ..
+   87  2024-09-25 12:38:29 ls
+   88  2024-09-25 12:38:34 cd ..
+   89  2024-09-25 12:38:41 export HISTTIMEFORMAT="%F %T "
+   90  2024-09-25 12:38:41 source ~/.bashrc
+   91  2024-09-25 12:38:41 history > commandslist.txt
+   92  2024-09-25 12:38:49 cd home
+   93  2024-09-25 12:40:00 ls
+   94  2024-09-25 12:40:08 cdc ec2-user
+   95  2024-09-25 12:40:13 cd ec2-user
+   96  2024-09-25 12:40:19 export HISTTIMEFORMAT="%F %T "
+   97  2024-09-25 12:40:19 source ~/.bashrc
+   98  2024-09-25 12:40:19 history > commandslist.txt
+   99  2024-09-25 12:40:39 ls
+  100  2024-09-25 12:40:50 cd commandlist.txt
+  101  2024-09-25 12:41:00 vi commandlist.txt
+  102  2024-09-25 12:41:22 cd commandslist.txt
+  103  2024-09-25 12:41:33 vi commandslist.txt
+  104  2024-09-25 12:44:58 exit
+sqlplus
+aws ec2 describe-instances --instance-ids i-0792a9ddd272c68e9 --query "Reservations[*].Instances[*].PublicIpAddress" --output text
+sudo yum update -y
+sudo yum install https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/linux_amd64/amazon-ssm-agent.rpm -y
+sudo systemctl enable amazon-ssm-agent
+sudo systemctl start amazon-ssm-agent
+sudo systemctl status amazon-ssm-agent
+sudo cat /var/log/amazon/ssm/amazon-ssm-agent.log
+sudo systemctl status amazon-ssm-agent
+sudo systemctl restart amazon-ssm-agent
+sudo systemctl status amazon-ssm-agent
+sudo cat /var/log/amazon/ssm/amazon-ssm-agent.log
+ls
+cat commandlists.txt >> training-biz-akhilk/commandslists.txt
+touch commandlists.txt >> training-biz-akhilk/commandslists.txt
+cd training-biz-akhilk
+ls
+vi commandslists.txt
+cd ..
+vi commandslist.txt
+cat commandlists.txt >> training-biz-akhilk/commandslists.txt
+vi training-biz-akhilk/commandslists.txt 
+cat commandlists.txt > training-biz-akhilk/commandslists.txt
+vi training-biz-akhilk/commandslists.txt 
+ls -l commandslist.txt
+cat commandslist.txt > training-biz-akhilk/commandslists.txt
+vi training-biz-akhilk/commandslists.txt
+sqlplus
+git --version
+s
+ls -al
+cd training-biz-akhilk/
+chrontab -l
+chrontab -e
+crontab -e
+ls
+cd .
+cd ..
+vi git_commit.sh
+  105  2024-09-27 06:27:57 # Load history from the history file manually
+  106  2024-09-27 06:27:57 history -a
+  107  2024-09-27 06:27:57 # Navigate to your GitHub repo (adjust this path to your actual repo location)
+  108  2024-09-27 06:27:57 cd ~/training-biz-akhilk
+  109  2024-09-27 06:27:57 # Pull the latest changes from GitHub before making any commits
+  110  2024-09-27 06:27:57 git pull origin main
+  111  2024-09-27 06:27:58 # Save the history to the commandslist.txt file inside the repo
+  112  2024-09-27 06:27:58 history > ./commandslist.txt
