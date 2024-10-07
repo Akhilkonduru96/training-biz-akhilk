@@ -348,19 +348,37 @@ pwd
 su - akhil
   177  2024-10-07 11:40:01 # Load history from the history file manually
   178  2024-10-07 11:40:01 history -a
-  179  2024-10-07 11:40:01 history_file=~/.bash_history
-  180  2024-10-07 11:40:01 if [ -f $history_file ]; then     history -r $history_file  # Read the history file into the current session
+  179  2024-10-07 11:40:01 # Load history from the history file manually
+  180  2024-10-07 11:40:01 history -a
+  181  2024-10-07 11:40:01 # Navigate to your GitHub repo (adjust this path to your actual repo location)
+  182  2024-10-07 11:40:01 cd ~/training-biz-akhilk
+  183  2024-10-07 11:40:01 # Pull the latest changes from GitHub before making any commits
+  184  2024-10-07 11:40:01 git pull origin main
+  185  2024-10-07 11:40:03 # Save the history to the commandslist.txt file inside the repo
+  186  2024-10-07 11:40:03 history > ./commandslist.txt
+  187  2024-10-07 11:40:03 # Get the current date and time
+  188  2024-10-07 11:40:03 current_time=$(date +"%Y-%m-%d %H:%M:%S")
+  189  2024-10-07 11:40:03 # Add the commandslist.txt file to Git
+  190  2024-10-07 11:40:03 git add ./commandslist.txt
+  191  2024-10-07 11:40:03 # Commit the changes with the current time in the message
+  192  2024-10-07 11:40:03 git commit -m "Corn test $current_time"
+  193  2024-10-07 11:40:03 # Push the changes to GitHub
+  194  2024-10-07 11:40:03 git push origin main
+  195  2024-10-07 11:45:02 # Load history from the history file manually
+  196  2024-10-07 11:45:02 history -a
+  197  2024-10-07 11:45:02 history_file=~/.bash_history
+  198  2024-10-07 11:45:02 if [ -f $history_file ]; then     history -r $history_file  # Read the history file into the current session
 fi
-  181  2024-09-17 09:40:43 export HISTTIMEFORMAT="%F %T "
-  182  2024-09-17 09:40:52 source ~/.bashrc
-  183  2024-09-17 09:41:04 history > commandslist.txt
-  184  2024-09-17 09:49:19 chmod 700 ~/.ssh
-  185  2024-09-17 09:50:01 chmod 600 ~/.ssh/"C:\Users\akhil.konduru\Downloads\akhilk-keypair.pem"
-  186  2024-09-17 09:52:17 ls
-  187  2024-09-17 09:52:28 cls
-  188  2024-09-17 09:56:12 ls .ssh
-  189  2024-09-17 09:56:24 mkdir -p .ssh
-  190  2024-09-17 09:57:04 ssh-copy-id ec2-user@13.60.9.200
+  199  2024-09-17 09:40:43 export HISTTIMEFORMAT="%F %T "
+  200  2024-09-17 09:40:52 source ~/.bashrc
+  201  2024-09-17 09:41:04 history > commandslist.txt
+  202  2024-09-17 09:49:19 chmod 700 ~/.ssh
+  203  2024-09-17 09:50:01 chmod 600 ~/.ssh/"C:\Users\akhil.konduru\Downloads\akhilk-keypair.pem"
+  204  2024-09-17 09:52:17 ls
+  205  2024-09-17 09:52:28 cls
+  206  2024-09-17 09:56:12 ls .ssh
+  207  2024-09-17 09:56:24 mkdir -p .ssh
+  208  2024-09-17 09:57:04 ssh-copy-id ec2-user@13.60.9.200
 ssh ec2-user@13.48.5.104
 chmod 700 ~/.ssh
 chmod 600 ~/.ssh/authorized_keys
@@ -468,46 +486,46 @@ ls
 vi authorized_keys 
 lsnrctl status
 sudo bash
-  191  2024-09-25 12:15:45 sudo yum github
-  192  2024-09-25 12:16:47 sudo yum git
-  193  2024-09-25 12:16:51 sudo yum gitbash
-  194  2024-09-25 12:17:36 git --version
-  195  2024-09-25 12:18:16 sudo yum install gitbash
-  196  2024-09-25 12:19:41 sudo yum install git
-  197  2024-09-25 12:20:18 git clone https://github.com/Akhilkonduru96/training-biz-akhilk.git
-  198  2024-09-25 12:20:24 ll
-  199  2024-09-25 12:20:46 cd training-biz-akhilk
-  200  2024-09-25 12:20:50 ls
-  201  2024-09-25 12:21:01 ls -al
-  202  2024-09-25 12:24:41 cd .git
-  203  2024-09-25 12:24:44 ls
-  204  2024-09-25 12:24:56 cd branches
-  205  2024-09-25 12:24:59 ls
-  206  2024-09-25 12:25:04 ls -al
-  207  2024-09-25 12:25:30 cd ..
-  208  2024-09-25 12:25:39 vi config
-  209  2024-09-25 12:33:02 cd logs
-  210  2024-09-25 12:33:04 ls
-  211  2024-09-25 12:33:11 vi HEAD
-  212  2024-09-25 12:37:59 cd ..
-  213  2024-09-25 12:38:29 ls
-  214  2024-09-25 12:38:34 cd ..
-  215  2024-09-25 12:38:41 export HISTTIMEFORMAT="%F %T "
-  216  2024-09-25 12:38:41 source ~/.bashrc
-  217  2024-09-25 12:38:41 history > commandslist.txt
-  218  2024-09-25 12:38:49 cd home
-  219  2024-09-25 12:40:00 ls
-  220  2024-09-25 12:40:08 cdc ec2-user
-  221  2024-09-25 12:40:13 cd ec2-user
-  222  2024-09-25 12:40:19 export HISTTIMEFORMAT="%F %T "
-  223  2024-09-25 12:40:19 source ~/.bashrc
-  224  2024-09-25 12:40:19 history > commandslist.txt
-  225  2024-09-25 12:40:39 ls
-  226  2024-09-25 12:40:50 cd commandlist.txt
-  227  2024-09-25 12:41:00 vi commandlist.txt
-  228  2024-09-25 12:41:22 cd commandslist.txt
-  229  2024-09-25 12:41:33 vi commandslist.txt
-  230  2024-09-25 12:44:58 exit
+  209  2024-09-25 12:15:45 sudo yum github
+  210  2024-09-25 12:16:47 sudo yum git
+  211  2024-09-25 12:16:51 sudo yum gitbash
+  212  2024-09-25 12:17:36 git --version
+  213  2024-09-25 12:18:16 sudo yum install gitbash
+  214  2024-09-25 12:19:41 sudo yum install git
+  215  2024-09-25 12:20:18 git clone https://github.com/Akhilkonduru96/training-biz-akhilk.git
+  216  2024-09-25 12:20:24 ll
+  217  2024-09-25 12:20:46 cd training-biz-akhilk
+  218  2024-09-25 12:20:50 ls
+  219  2024-09-25 12:21:01 ls -al
+  220  2024-09-25 12:24:41 cd .git
+  221  2024-09-25 12:24:44 ls
+  222  2024-09-25 12:24:56 cd branches
+  223  2024-09-25 12:24:59 ls
+  224  2024-09-25 12:25:04 ls -al
+  225  2024-09-25 12:25:30 cd ..
+  226  2024-09-25 12:25:39 vi config
+  227  2024-09-25 12:33:02 cd logs
+  228  2024-09-25 12:33:04 ls
+  229  2024-09-25 12:33:11 vi HEAD
+  230  2024-09-25 12:37:59 cd ..
+  231  2024-09-25 12:38:29 ls
+  232  2024-09-25 12:38:34 cd ..
+  233  2024-09-25 12:38:41 export HISTTIMEFORMAT="%F %T "
+  234  2024-09-25 12:38:41 source ~/.bashrc
+  235  2024-09-25 12:38:41 history > commandslist.txt
+  236  2024-09-25 12:38:49 cd home
+  237  2024-09-25 12:40:00 ls
+  238  2024-09-25 12:40:08 cdc ec2-user
+  239  2024-09-25 12:40:13 cd ec2-user
+  240  2024-09-25 12:40:19 export HISTTIMEFORMAT="%F %T "
+  241  2024-09-25 12:40:19 source ~/.bashrc
+  242  2024-09-25 12:40:19 history > commandslist.txt
+  243  2024-09-25 12:40:39 ls
+  244  2024-09-25 12:40:50 cd commandlist.txt
+  245  2024-09-25 12:41:00 vi commandlist.txt
+  246  2024-09-25 12:41:22 cd commandslist.txt
+  247  2024-09-25 12:41:33 vi commandslist.txt
+  248  2024-09-25 12:44:58 exit
 sqlplus
 aws ec2 describe-instances --instance-ids i-0792a9ddd272c68e9 --query "Reservations[*].Instances[*].PublicIpAddress" --output text
 sudo yum update -y
@@ -547,78 +565,78 @@ ls
 cd .
 cd ..
 vi git_commit.sh
-  231  2024-09-27 06:27:57 # Load history from the history file manually
-  232  2024-09-27 06:27:57 history -a
-  233  2024-09-27 06:27:57 # Load history from the history file manually
-  234  2024-09-27 06:27:57 history -a
-  235  2024-09-27 06:27:57 # Navigate to your GitHub repo (adjust this path to your actual repo location)
-  236  2024-09-27 06:27:57 cd ~/training-biz-akhilk
-  237  2024-09-27 06:27:57 # Pull the latest changes from GitHub before making any commits
-  238  2024-09-27 06:27:57 git pull origin main
-  239  2024-09-27 06:27:58 # Save the history to the commandslist.txt file inside the repo
-  240  2024-09-27 06:27:58 history > ./commandslist.txt
-  241  2024-09-27 06:27:58 # Get the current date and time
-  242  2024-09-27 06:27:58 current_time=$(date +"%Y-%m-%d %H:%M:%S")
-  243  2024-09-27 06:27:58 # Add the commandslist.txt file to Git
-  244  2024-09-27 06:27:58 git add ./commandslist.txt
-  245  2024-09-27 06:27:58 # Commit the changes with the current time in the message
-  246  2024-09-27 06:27:58 git commit -m "Corn test $current_time"
-  247  2024-09-27 06:27:58 # Push the changes to GitHub
-  248  2024-09-27 06:27:58 git push origin main
-  249  2024-09-27 06:35:01 # Load history from the history file manually
-  250  2024-09-27 06:35:01 history -a
-  251  2024-09-27 06:35:01 # Load history from the history file manually
-  252  2024-09-27 06:35:01 history -a
-  253  2024-09-27 06:35:01 # Navigate to your GitHub repo (adjust this path to your actual repo location)
-  254  2024-09-27 06:35:01 cd ~/training-biz-akhilk
-  255  2024-09-27 06:35:01 # Pull the latest changes from GitHub before making any commits
-  256  2024-09-27 06:35:01 git pull origin main
-  257  2024-09-27 06:35:02 # Save the history to the commandslist.txt file inside the repo
-  258  2024-09-27 06:35:02 history > ./commandslist.txt
-  259  2024-09-27 06:35:02 # Get the current date and time
-  260  2024-09-27 06:35:02 current_time=$(date +"%Y-%m-%d %H:%M:%S")
-  261  2024-09-27 06:35:02 # Add the commandslist.txt file to Git
-  262  2024-09-27 06:35:02 git add ./commandslist.txt
-  263  2024-09-27 06:35:02 # Commit the changes with the current time in the message
-  264  2024-09-27 06:35:02 git commit -m "Corn test $current_time"
-  265  2024-09-27 06:35:02 # Push the changes to GitHub
-  266  2024-09-27 06:35:02 git push origin main
-  267  2024-09-27 06:40:01 # Load history from the history file manually
-  268  2024-09-27 06:40:01 history -a
-  269  2024-09-27 06:40:01 # Load history from the history file manually
-  270  2024-09-27 06:40:01 history -a
-  271  2024-09-27 06:40:01 # Navigate to your GitHub repo (adjust this path to your actual repo location)
-  272  2024-09-27 06:40:01 cd ~/training-biz-akhilk
-  273  2024-09-27 06:40:01 # Pull the latest changes from GitHub before making any commits
-  274  2024-09-27 06:40:01 git pull origin main
-  275  2024-09-27 06:40:02 # Save the history to the commandslist.txt file inside the repo
-  276  2024-09-27 06:40:02 history > ./commandslist.txt
-  277  2024-09-27 06:40:02 # Get the current date and time
-  278  2024-09-27 06:40:02 current_time=$(date +"%Y-%m-%d %H:%M:%S")
-  279  2024-09-27 06:40:02 # Add the commandslist.txt file to Git
-  280  2024-09-27 06:40:02 git add ./commandslist.txt
-  281  2024-09-27 06:40:02 # Commit the changes with the current time in the message
-  282  2024-09-27 06:40:02 git commit -m "Corn test $current_time"
-  283  2024-09-27 06:40:02 # Push the changes to GitHub
-  284  2024-09-27 06:40:02 git push origin main
-  285  2024-09-27 06:45:01 # Load history from the history file manually
-  286  2024-09-27 06:45:01 history -a
-  287  2024-09-27 06:45:01 # Load history from the history file manually
-  288  2024-09-27 06:45:01 history -a
-  289  2024-09-27 06:45:01 # Navigate to your GitHub repo (adjust this path to your actual repo location)
-  290  2024-09-27 06:45:01 cd ~/training-biz-akhilk
-  291  2024-09-27 06:45:01 # Pull the latest changes from GitHub before making any commits
-  292  2024-09-27 06:45:01 git pull origin main
-  293  2024-09-27 06:45:02 # Save the history to the commandslist.txt file inside the repo
-  294  2024-09-27 06:45:02 history > ./commandslist.txt
-  295  2024-09-27 06:45:02 # Get the current date and time
-  296  2024-09-27 06:45:02 current_time=$(date +"%Y-%m-%d %H:%M:%S")
-  297  2024-09-27 06:45:02 # Add the commandslist.txt file to Git
-  298  2024-09-27 06:45:02 git add ./commandslist.txt
-  299  2024-09-27 06:45:02 # Commit the changes with the current time in the message
-  300  2024-09-27 06:45:02 git commit -m "Corn test $current_time"
-  301  2024-09-27 06:45:02 # Push the changes to GitHub
-  302  2024-09-27 06:45:02 git push origin main
+  249  2024-09-27 06:27:57 # Load history from the history file manually
+  250  2024-09-27 06:27:57 history -a
+  251  2024-09-27 06:27:57 # Load history from the history file manually
+  252  2024-09-27 06:27:57 history -a
+  253  2024-09-27 06:27:57 # Navigate to your GitHub repo (adjust this path to your actual repo location)
+  254  2024-09-27 06:27:57 cd ~/training-biz-akhilk
+  255  2024-09-27 06:27:57 # Pull the latest changes from GitHub before making any commits
+  256  2024-09-27 06:27:57 git pull origin main
+  257  2024-09-27 06:27:58 # Save the history to the commandslist.txt file inside the repo
+  258  2024-09-27 06:27:58 history > ./commandslist.txt
+  259  2024-09-27 06:27:58 # Get the current date and time
+  260  2024-09-27 06:27:58 current_time=$(date +"%Y-%m-%d %H:%M:%S")
+  261  2024-09-27 06:27:58 # Add the commandslist.txt file to Git
+  262  2024-09-27 06:27:58 git add ./commandslist.txt
+  263  2024-09-27 06:27:58 # Commit the changes with the current time in the message
+  264  2024-09-27 06:27:58 git commit -m "Corn test $current_time"
+  265  2024-09-27 06:27:58 # Push the changes to GitHub
+  266  2024-09-27 06:27:58 git push origin main
+  267  2024-09-27 06:35:01 # Load history from the history file manually
+  268  2024-09-27 06:35:01 history -a
+  269  2024-09-27 06:35:01 # Load history from the history file manually
+  270  2024-09-27 06:35:01 history -a
+  271  2024-09-27 06:35:01 # Navigate to your GitHub repo (adjust this path to your actual repo location)
+  272  2024-09-27 06:35:01 cd ~/training-biz-akhilk
+  273  2024-09-27 06:35:01 # Pull the latest changes from GitHub before making any commits
+  274  2024-09-27 06:35:01 git pull origin main
+  275  2024-09-27 06:35:02 # Save the history to the commandslist.txt file inside the repo
+  276  2024-09-27 06:35:02 history > ./commandslist.txt
+  277  2024-09-27 06:35:02 # Get the current date and time
+  278  2024-09-27 06:35:02 current_time=$(date +"%Y-%m-%d %H:%M:%S")
+  279  2024-09-27 06:35:02 # Add the commandslist.txt file to Git
+  280  2024-09-27 06:35:02 git add ./commandslist.txt
+  281  2024-09-27 06:35:02 # Commit the changes with the current time in the message
+  282  2024-09-27 06:35:02 git commit -m "Corn test $current_time"
+  283  2024-09-27 06:35:02 # Push the changes to GitHub
+  284  2024-09-27 06:35:02 git push origin main
+  285  2024-09-27 06:40:01 # Load history from the history file manually
+  286  2024-09-27 06:40:01 history -a
+  287  2024-09-27 06:40:01 # Load history from the history file manually
+  288  2024-09-27 06:40:01 history -a
+  289  2024-09-27 06:40:01 # Navigate to your GitHub repo (adjust this path to your actual repo location)
+  290  2024-09-27 06:40:01 cd ~/training-biz-akhilk
+  291  2024-09-27 06:40:01 # Pull the latest changes from GitHub before making any commits
+  292  2024-09-27 06:40:01 git pull origin main
+  293  2024-09-27 06:40:02 # Save the history to the commandslist.txt file inside the repo
+  294  2024-09-27 06:40:02 history > ./commandslist.txt
+  295  2024-09-27 06:40:02 # Get the current date and time
+  296  2024-09-27 06:40:02 current_time=$(date +"%Y-%m-%d %H:%M:%S")
+  297  2024-09-27 06:40:02 # Add the commandslist.txt file to Git
+  298  2024-09-27 06:40:02 git add ./commandslist.txt
+  299  2024-09-27 06:40:02 # Commit the changes with the current time in the message
+  300  2024-09-27 06:40:02 git commit -m "Corn test $current_time"
+  301  2024-09-27 06:40:02 # Push the changes to GitHub
+  302  2024-09-27 06:40:02 git push origin main
+  303  2024-09-27 06:45:01 # Load history from the history file manually
+  304  2024-09-27 06:45:01 history -a
+  305  2024-09-27 06:45:01 # Load history from the history file manually
+  306  2024-09-27 06:45:01 history -a
+  307  2024-09-27 06:45:01 # Navigate to your GitHub repo (adjust this path to your actual repo location)
+  308  2024-09-27 06:45:01 cd ~/training-biz-akhilk
+  309  2024-09-27 06:45:01 # Pull the latest changes from GitHub before making any commits
+  310  2024-09-27 06:45:01 git pull origin main
+  311  2024-09-27 06:45:02 # Save the history to the commandslist.txt file inside the repo
+  312  2024-09-27 06:45:02 history > ./commandslist.txt
+  313  2024-09-27 06:45:02 # Get the current date and time
+  314  2024-09-27 06:45:02 current_time=$(date +"%Y-%m-%d %H:%M:%S")
+  315  2024-09-27 06:45:02 # Add the commandslist.txt file to Git
+  316  2024-09-27 06:45:02 git add ./commandslist.txt
+  317  2024-09-27 06:45:02 # Commit the changes with the current time in the message
+  318  2024-09-27 06:45:02 git commit -m "Corn test $current_time"
+  319  2024-09-27 06:45:02 # Push the changes to GitHub
+  320  2024-09-27 06:45:02 git push origin main
 git config --global user.name "Akhilkonduru96"
 git config --global user.email "akhil.konduru@bizacuity.com"
 ls -al ~/.ssh
@@ -642,68 +660,86 @@ chmod +x cron.sh
 ./cron.sh
 crontab -e
 crontab -l
-  303  2024-10-01 07:45:02 # Load history from the history file manually
-  304  2024-10-01 07:45:02 history -a
-  305  2024-10-01 07:45:02 # Load history from the history file manually
-  306  2024-10-01 07:45:02 history -a
-  307  2024-10-01 07:45:02 # Navigate to your GitHub repo (adjust this path to your actual repo location)
-  308  2024-10-01 07:45:02 cd ~/training-biz-akhilk
-  309  2024-10-01 07:45:02 # Pull the latest changes from GitHub before making any commits
-  310  2024-10-01 07:45:02 git pull origin main
-  311  2024-10-01 07:45:04 # Save the history to the commandslist.txt file inside the repo
-  312  2024-10-01 07:45:04 history > ./commandslist.txt
-  313  2024-10-01 07:45:04 # Get the current date and time
-  314  2024-10-01 07:45:04 current_time=$(date +"%Y-%m-%d %H:%M:%S")
-  315  2024-10-01 07:45:04 # Add the commandslist.txt file to Git
-  316  2024-10-01 07:45:04 git add ./commandslist.txt
-  317  2024-10-01 07:45:04 # Commit the changes with the current time in the message
-  318  2024-10-01 07:45:04 git commit -m "Corn test $current_time"
-  319  2024-10-01 07:45:04 # Push the changes to GitHub
-  320  2024-10-01 07:45:04 git push origin main
-  321  2024-10-01 07:50:01 # Load history from the history file manually
-  322  2024-10-01 07:50:01 history -a
-  323  2024-10-01 07:50:01 # Load history from the history file manually
-  324  2024-10-01 07:50:01 history -a
-  325  2024-10-01 07:50:01 # Navigate to your GitHub repo (adjust this path to your actual repo location)
-  326  2024-10-01 07:50:01 cd ~/training-biz-akhilk
-  327  2024-10-01 07:50:01 # Pull the latest changes from GitHub before making any commits
-  328  2024-10-01 07:50:01 git pull origin main
-  329  2024-10-01 07:50:03 # Save the history to the commandslist.txt file inside the repo
-  330  2024-10-01 07:50:03 history > ./commandslist.txt
-  331  2024-10-01 07:50:03 # Get the current date and time
-  332  2024-10-01 07:50:03 current_time=$(date +"%Y-%m-%d %H:%M:%S")
-  333  2024-10-01 07:50:03 # Add the commandslist.txt file to Git
-  334  2024-10-01 07:50:03 git add ./commandslist.txt
-  335  2024-10-01 07:50:03 # Commit the changes with the current time in the message
-  336  2024-10-01 07:50:03 git commit -m "Corn test $current_time"
-  337  2024-10-01 07:50:03 # Push the changes to GitHub
-  338  2024-10-01 07:50:03 git push origin main
-  339  2024-10-01 07:55:02 # Load history from the history file manually
-  340  2024-10-01 07:55:02 history -a
-  341  2024-10-01 07:55:02 # Load history from the history file manually
-  342  2024-10-01 07:55:02 history -a
-  343  2024-10-01 07:55:02 # Navigate to your GitHub repo (adjust this path to your actual repo location)
-  344  2024-10-01 07:55:02 cd ~/training-biz-akhilk
-  345  2024-10-01 07:55:02 # Pull the latest changes from GitHub before making any commits
-  346  2024-10-01 07:55:02 git pull origin main
-  347  2024-10-01 07:55:03 # Save the history to the commandslist.txt file inside the repo
-  348  2024-10-01 07:55:03 history > ./commandslist.txt
-  349  2024-10-01 07:55:03 # Get the current date and time
-  350  2024-10-01 07:55:03 current_time=$(date +"%Y-%m-%d %H:%M:%S")
-  351  2024-10-01 07:55:03 # Add the commandslist.txt file to Git
-  352  2024-10-01 07:55:03 git add ./commandslist.txt
-  353  2024-10-01 07:55:03 # Commit the changes with the current time in the message
-  354  2024-10-01 07:55:03 git commit -m "Corn test $current_time"
-  355  2024-10-01 07:55:03 # Push the changes to GitHub
-  356  2024-10-01 07:55:03 git push origin main
+  321  2024-10-01 07:45:02 # Load history from the history file manually
+  322  2024-10-01 07:45:02 history -a
+  323  2024-10-01 07:45:02 # Load history from the history file manually
+  324  2024-10-01 07:45:02 history -a
+  325  2024-10-01 07:45:02 # Navigate to your GitHub repo (adjust this path to your actual repo location)
+  326  2024-10-01 07:45:02 cd ~/training-biz-akhilk
+  327  2024-10-01 07:45:02 # Pull the latest changes from GitHub before making any commits
+  328  2024-10-01 07:45:02 git pull origin main
+  329  2024-10-01 07:45:04 # Save the history to the commandslist.txt file inside the repo
+  330  2024-10-01 07:45:04 history > ./commandslist.txt
+  331  2024-10-01 07:45:04 # Get the current date and time
+  332  2024-10-01 07:45:04 current_time=$(date +"%Y-%m-%d %H:%M:%S")
+  333  2024-10-01 07:45:04 # Add the commandslist.txt file to Git
+  334  2024-10-01 07:45:04 git add ./commandslist.txt
+  335  2024-10-01 07:45:04 # Commit the changes with the current time in the message
+  336  2024-10-01 07:45:04 git commit -m "Corn test $current_time"
+  337  2024-10-01 07:45:04 # Push the changes to GitHub
+  338  2024-10-01 07:45:04 git push origin main
+  339  2024-10-01 07:50:01 # Load history from the history file manually
+  340  2024-10-01 07:50:01 history -a
+  341  2024-10-01 07:50:01 # Load history from the history file manually
+  342  2024-10-01 07:50:01 history -a
+  343  2024-10-01 07:50:01 # Navigate to your GitHub repo (adjust this path to your actual repo location)
+  344  2024-10-01 07:50:01 cd ~/training-biz-akhilk
+  345  2024-10-01 07:50:01 # Pull the latest changes from GitHub before making any commits
+  346  2024-10-01 07:50:01 git pull origin main
+  347  2024-10-01 07:50:03 # Save the history to the commandslist.txt file inside the repo
+  348  2024-10-01 07:50:03 history > ./commandslist.txt
+  349  2024-10-01 07:50:03 # Get the current date and time
+  350  2024-10-01 07:50:03 current_time=$(date +"%Y-%m-%d %H:%M:%S")
+  351  2024-10-01 07:50:03 # Add the commandslist.txt file to Git
+  352  2024-10-01 07:50:03 git add ./commandslist.txt
+  353  2024-10-01 07:50:03 # Commit the changes with the current time in the message
+  354  2024-10-01 07:50:03 git commit -m "Corn test $current_time"
+  355  2024-10-01 07:50:03 # Push the changes to GitHub
+  356  2024-10-01 07:50:03 git push origin main
+  357  2024-10-01 07:55:02 # Load history from the history file manually
+  358  2024-10-01 07:55:02 history -a
+  359  2024-10-01 07:55:02 # Load history from the history file manually
+  360  2024-10-01 07:55:02 history -a
+  361  2024-10-01 07:55:02 # Navigate to your GitHub repo (adjust this path to your actual repo location)
+  362  2024-10-01 07:55:02 cd ~/training-biz-akhilk
+  363  2024-10-01 07:55:02 # Pull the latest changes from GitHub before making any commits
+  364  2024-10-01 07:55:02 git pull origin main
+  365  2024-10-01 07:55:03 # Save the history to the commandslist.txt file inside the repo
+  366  2024-10-01 07:55:03 history > ./commandslist.txt
+  367  2024-10-01 07:55:03 # Get the current date and time
+  368  2024-10-01 07:55:03 current_time=$(date +"%Y-%m-%d %H:%M:%S")
+  369  2024-10-01 07:55:03 # Add the commandslist.txt file to Git
+  370  2024-10-01 07:55:03 git add ./commandslist.txt
+  371  2024-10-01 07:55:03 # Commit the changes with the current time in the message
+  372  2024-10-01 07:55:03 git commit -m "Corn test $current_time"
+  373  2024-10-01 07:55:03 # Push the changes to GitHub
+  374  2024-10-01 07:55:03 git push origin main
 ls
 pwd
 su - akhil
-  357  2024-10-07 11:40:01 # Load history from the history file manually
-  358  2024-10-07 11:40:01 history -a
-  359  2024-10-07 11:40:01 # Navigate to your GitHub repo (adjust this path to your actual repo location)
-  360  2024-10-07 11:40:01 cd ~/training-biz-akhilk
-  361  2024-10-07 11:40:01 # Pull the latest changes from GitHub before making any commits
-  362  2024-10-07 11:40:01 git pull origin main
-  363  2024-10-07 11:40:03 # Save the history to the commandslist.txt file inside the repo
-  364  2024-10-07 11:40:03 history > ./commandslist.txt
+  375  2024-10-07 11:40:01 # Load history from the history file manually
+  376  2024-10-07 11:40:01 history -a
+  377  2024-10-07 11:40:01 # Load history from the history file manually
+  378  2024-10-07 11:40:01 history -a
+  379  2024-10-07 11:40:01 # Navigate to your GitHub repo (adjust this path to your actual repo location)
+  380  2024-10-07 11:40:01 cd ~/training-biz-akhilk
+  381  2024-10-07 11:40:01 # Pull the latest changes from GitHub before making any commits
+  382  2024-10-07 11:40:01 git pull origin main
+  383  2024-10-07 11:40:03 # Save the history to the commandslist.txt file inside the repo
+  384  2024-10-07 11:40:03 history > ./commandslist.txt
+  385  2024-10-07 11:40:03 # Get the current date and time
+  386  2024-10-07 11:40:03 current_time=$(date +"%Y-%m-%d %H:%M:%S")
+  387  2024-10-07 11:40:03 # Add the commandslist.txt file to Git
+  388  2024-10-07 11:40:03 git add ./commandslist.txt
+  389  2024-10-07 11:40:03 # Commit the changes with the current time in the message
+  390  2024-10-07 11:40:03 git commit -m "Corn test $current_time"
+  391  2024-10-07 11:40:03 # Push the changes to GitHub
+  392  2024-10-07 11:40:03 git push origin main
+  393  2024-10-07 11:45:02 # Load history from the history file manually
+  394  2024-10-07 11:45:02 history -a
+  395  2024-10-07 11:45:02 # Navigate to your GitHub repo (adjust this path to your actual repo location)
+  396  2024-10-07 11:45:02 cd ~/training-biz-akhilk
+  397  2024-10-07 11:45:02 # Pull the latest changes from GitHub before making any commits
+  398  2024-10-07 11:45:02 git pull origin main
+  399  2024-10-07 11:45:03 # Save the history to the commandslist.txt file inside the repo
+  400  2024-10-07 11:45:03 history > ./commandslist.txt
